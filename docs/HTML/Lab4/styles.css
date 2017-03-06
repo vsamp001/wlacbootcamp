@@ -1,0 +1,33 @@
+/*Victor Samperio 01/31/2017*/
+#outerwrapper {
+  border: 20px solid #949599;
+  margin: 60px;
+  padding:5px;
+
+}
+#first {
+    border-bottom: 2px solid lightgrey;
+    margin:15px;
+}
+#second {
+    margin:15px;
+}
+
+h1 {
+    color:#375990;
+    font-family: sans-serif, serif;
+}
+
+.date {
+    color:#1c9db8;
+    font-family: helvetica;
+}
+
+p {
+    font-family: helvetica;
+}
+
+.firstparagraph {
+    border-left: 5px solid #949599;
+    padding:5px;
+}
