@@ -1,0 +1,53 @@
+legend, #submit {
+  font-family: 'Roboto', times, serif;
+  }
+fieldset {
+  margin-bottom: 10px;
+  position: relative;
+  padding: 2.5em 1em 0.5em 1em;
+ 
+  }
+fieldset fieldset {
+  padding-top: 5px;
+  }
+form {
+
+	padding: 10px;
+	margin: 0 50px 10px 50px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+  }
+ textarea {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  font-size: 1em;
+  }
+legend span {
+  position: absolute;
+  left: 0;
+  font-size: 1.25em;
+  margin-top: 0.5em;
+  margin-left: 0.5em;
+  }
+#submitbutton {
+  border: none;
+  }
+
+
+textarea:focus {
+	
+}
+
+
+#submit {
+	
+	font-size: 1.25em;
+}
+#submitbutton {
+  border:none;
+
+  padding: 0.5em 0 0.5em 0;
+  text-align: center;
+}
