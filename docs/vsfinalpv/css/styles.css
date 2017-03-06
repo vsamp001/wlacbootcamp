@@ -1,0 +1,325 @@
+@charset "utf-8";
+/* Simple fluid media
+   Note: Fluid media requires that you remove the media's height and width attributes from the HTML
+   http://www.alistapart.com/articles/fluid-images/ 
+*/
+img, object, embed, video {
+	max-width: 100%;
+	text-align: center;
+}
+
+/* IE 6 does not support max-width so default to width 100% */
+.ie6 img {
+	width:100%;
+}
+
+/*
+	Dreamweaver Fluid Grid Properties
+	----------------------------------
+	dw-num-cols-mobile:		4;
+	dw-num-cols-tablet:		8;
+	dw-num-cols-desktop:	12;
+	dw-gutter-percentage:	15;
+	
+	Inspiration from "Responsive Web Design" by Ethan Marcotte 
+	http://www.alistapart.com/articles/responsive-web-design
+	
+	and Golden Grid System by Joni Korpi
+	http://goldengridsystem.com/
+*/
+
+.fluid {
+	clear: both;
+	margin-left: 0;
+	width: 100%;
+	float: left;
+	display: block;
+}
+
+.fluidList {
+    list-style:none;
+    list-style-image:none;
+    margin:0;
+    padding:0;        
+}
+
+/* Mobile Layout: 480px and below. */
+  
+.gridContainer {
+	margin-left: auto;
+	margin-right: auto;
+	width: 96.7391%;
+	padding-left: 1.6304%;
+	padding-right: 1.6304%;
+	clear: none;
+	float: none;
+}
+#logo {
+	font-family: gruppo;
+	font-style: normal;
+	font-weight: 900;
+	text-align: center;
+	font-size: 50px;
+	color: rgba(255,255,255,1.00);
+	text-shadow: 0 0;
+	background-color: rgba(0,0,0,1.00);
+	width: 100%;
+}
+#nav {
+width: 100%;
+}
+#menu {
+width: 100%;
+margin-left: 0;
+}
+.link {
+	background-color: rgba(0,0,0,1.00);
+	color: rgba(255,255,255,1.00);
+	text-align: center;
+	font-family: gruppo;
+	font-style: normal;
+	font-size: x-large;
+	margin-top: 4px;
+	margin-bottom: 4px;
+	padding-top: 4px;
+	padding-bottom: 4px;
+	font-weight: 900;
+	width: 100%;
+	clear: both;
+	margin-left: 0;
+}
+#banner {
+display: none;
+}
+#content {
+	background-color: rgba(215,215,215,1.00);
+	font-family: muli;
+	font-style: normal;
+	font-weight: 300;
+	text-align: left;
+	padding-left: 1%;
+	padding-right: 1%;
+	width: 98%;
+	float: right;	
+}
+#footer {
+	text-align: center;
+	background-color: rgba(215,215,215,1.00);
+	font-family: muli;
+	font-style: normal;
+	font-weight: 300;
+}
+body {
+
+
+	background-attachment: fixed;
+	background-position: center 0%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	font-family: muli;
+	font-style: normal;
+	font-weight: 300;
+}
+#menu .fluid.link a {
+	text-decoration: none;
+}
+.videoPlayer {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	
+}
+tbody tr td {
+	font-size: large;
+
+}
+#newsletter p #email {
+	background-color: rgba(185,195,205,1.00);
+}
+
+#episodeguide {
+	
+	text-decoration: none;
+
+	padding: 0.25em;
+
+	width: 99%;
+	position: relative;
+	bottom:1em;
+}
+hr {
+border-style: inset;
+    border-width: 1px;
+}
+#episodeguide li {
+	list-style-type: none;
+	padding: 0.25em 1em 0.25em 1em;
+	margin: 0.25em 0 0.25em 0;
+	width:99%
+	position: relative;
+  }
+#episodeguide ul {
+  margin-bottom: 1em ;
+  padding: 0;
+  position:relative;
+ 
+  width:99%
+  }
+
+.zeroMargin_mobile {
+margin-left: 0;
+}
+.hide_mobile {
+display: none;
+}
+
+
+/* Tablet Layout: 481px to 768px. Inherits styles from: Mobile Layout. */
+
+@media only screen and (min-width: 481px) {
+
+.gridContainer {
+	width: 98.3695%;
+	padding-left: 0.8152%;
+	padding-right: 0.8152%;
+	clear: none;
+	float: none;
+	margin-left: auto;
+}
+#logo {
+width: 100%;
+}
+#nav {
+	margin-top: 5px;
+	margin-bottom: 5px;
+	width: 100%;
+}
+#menu {
+width: 100%;
+margin-left: 0;
+}
+.link {
+	width: 11.0497%;
+	margin-left: 1.6574%;
+	clear: none;
+	padding-left: 10px;
+	font-size: small;
+	text-align: center;
+	color: rgba(255,255,255,1.00);
+	padding-right: 10px;
+	margin-right: 1%;
+}
+#banner {
+	display: block;
+	background-color: rgba(215,215,215,1.00);
+}
+#content {
+	padding-top: 5px;
+	padding-bottom: 5px;
+	border-color: rgba(0,0,0,1.00);
+	border-top-width: medium;
+	border-bottom-width: medium;
+	border-style: solid none;
+	border-radius: 0px;
+	background-color: rgba(215,215,215,1.00);
+	float: right;
+}
+#footer {
+	text-align: center;
+	background-color: rgba(215,215,215,1.00);
+}
+.show_tablet {
+	display: inline;
+}
+#episodeguide {
+	float:left;
+	text-decoration: none;
+	text-align: left;
+	padding: 0.25em;
+	padding-left: 0.5em;
+	width: 7em;
+	position: relative;
+	bottom:1em;
+	margin-right:1em;
+}
+#episodeguide li {
+	list-style-type: none;
+	padding: 0.25em 1em 0.25em 1em;
+	margin: 0.25em 0 0.25em 0;
+	position: relative;
+  }
+#episodeguide ul {
+  margin-bottom: 1em ;
+  padding: 0;
+  position:relative;
+  top:2em;
+  }.hide_tablet {
+display: none;
+}
+.zeroMargin_tablet {
+margin-left: 0;
+}
+
+
+/* Desktop Layout: 769px to a max of 1232px.  Inherits styles from: Mobile Layout and Tablet Layout. */
+
+@media only screen and (min-width: 769px) {
+
+.gridContainer {
+	width: 89.0217%;
+	max-width: 1232px;
+	padding-left: 0.4891%;
+	padding-right: 0.4891%;
+	margin: auto;
+	clear: none;
+	float: none;
+	margin-left: auto;
+}
+#logo {
+	width: 24.1758%;
+	margin-top: 12px;
+	margin-bottom: 12px;
+	font-size: xx-large;
+}
+#nav {
+	width: 66.3003%;
+	margin-top: 15px;
+	float: right;
+	clear: none;
+}
+#menu {
+width: 100%;
+margin-left: 0;
+}
+.link {
+	width: 11.0497%;
+	clear: none;
+	margin-left: 1.6574%;
+	font-size: large;
+	background-color: rgba(0,0,0,1.00);
+	text-decoration: none;
+	color: #FFFFFF;
+}
+#banner {
+	display: block;
+	background-color: rgba(215,215,215,1.00);
+}
+#content {
+	background-color: rgba(215,215,215,1.00);
+	font-family: muli;
+	font-style: normal;
+	font-weight: 400;
+}
+#footer {
+	text-align: center;
+	background-color: rgba(215,215,215,1.00);
+}
+
+.zeroMargin_desktop {
+margin-left: 0;
+}
+.hide_desktop {
+display: none;
+}

@@ -1,0 +1,73 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="ie6 oldie"> <![endif]-->
+<!--[if IE 7]>    <html class="ie7 oldie"> <![endif]-->
+<!--[if IE 8]>    <html class="ie8 oldie"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="">
+<!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- TemplateBeginEditable name="doctitle" -->
+<title>Untitled Document</title>
+<!-- TemplateEndEditable -->
+
+
+<link rel="stylesheet" type="text/css" href="../css/boilerplate.css">
+<link rel="stylesheet" type="text/css" href="../css/styles.css">
+<link rel="shorcut icon" href="favicon.ico" />
+<!-- 
+To learn more about the conditional comments around the html tags at the top of the file:
+paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/
+
+Do the following if you're using your customized build of modernizr (http://www.modernizr.com/):
+* insert the link to your js here
+* remove the link below to the html5shiv
+* add the "no-js" class to the html tags at the top
+* you can also remove the link to respond.min.js if you included the MQ Polyfill in your modernizr build 
+-->
+<!--[if lt IE 9]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+<script src="../js/respond.min.js"></script>
+
+<!-- TemplateBeginEditable name="head" -->
+<!-- TemplateEndEditable -->
+<!--The following script tag downloads a font from the Adobe Edge Web Fonts server for use within the web page. We recommend that you do not modify it.--><script>var __adobewebfontsappname__="dreamweaver"</script><script src="http://use.edgefonts.net/bangers:n4:default;gruppo:n4:default;just-me-again-down-here:n4:default;raleway:n4,n1:default;dancing-script:n4:default;muli:n4,n3:default;waiting-for-the-sunrise:n4:default.js" type="text/javascript"></script>
+</head>
+<body>
+<div class="gridContainer clearfix">
+<header id="logo" class="fluid">
+	Project Vanguard
+</header><nav id="nav" class="fluid">
+ <ul id="menu" class="fluid fluidList">
+  <li class="fluid link zeroMargin_desktop"><a href="../index.html">Home</a></li>
+  <li class="fluid link"><a href="../arrow.html">Arrow</a></li>
+  <li class="fluid link"><a href="../flash.html">Flash</a></li> 
+  <li class="fluid link"><a href="../supergirl.html">Supergirl</a></li>
+  <li class="fluid link"><a href="../tv.html">TV</a></li>
+  <li class="fluid link"><a href="../about.html">About</a></li>
+ </ul> 
+</nav>
+<section id="banner" class="fluid"><!-- TemplateBeginEditable name="imageArea" -->Insert image here<!-- TemplateEndEditable -->
+
+</section>
+<section id="content" class="fluid"><!-- TemplateBeginEditable name="contentArea" -->Insert content here<!-- TemplateEndEditable -->
+
+</section>
+
+<footer id="footer" class="fluid">
+Copyright&copy; 2015. All Rights Reserved. </footer>
+
+
+
+
+
+
+
+
+
+</div>
+</body>
+</html>
