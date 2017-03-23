@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>jQuery Methods</title>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+
+	<style type="text/css">
+		.correct {
+			color: green;
+		}
+
+		.wrong {
+			color: red;
+			background: pink;
+		}
+
+		.done {
+			color: gray;
+			text-decoration: line-through;
+		}
+
+	</style>
+</head>
+<body>
+
+<h1>The page header</h1>
+
+<input type="color" placeholder="your name">
+
+<select>
+	<option>Ostrich</option>
+	<option>Turtle</option>
+	<option>Toad</option>
+</select>
+
+<ul>
+	<li>Skittles</li>
+	<li>Starburst</li>
+	<li class="wrong">Twix</li>
+</ul>
+
+<p></p>
+
+<img src="http://i.imgur.com/zvANQeG.jpg">
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        //ADD YOUR SCRIPT HERE
+		//Using the text()method, change the header on the page to “jQuery Methods Demo
+		$('h1').text("jQuery Methods Demo Page");
+		//Use the html() method to add a link to Google’s homepage to the paragraph.
+		$('p').html('<a href="http://www.google.com">Google</a>');
+		//Use the attr() method to give the image a title of “pine marten”.
+		$('img').attr({title:"pine marten"});
+		//Use the attr() method to change the input type to “text”.
+		$('input').attr({type:"text"});
+		//Use addClass() method to give the header the css class “correct”.
+		$('h1').addClass("correct");
+		//Use removeClass() method to remove the “wrong” class from the last list element.
+		$('li:last').removeClass("wrong");
+		//Use the toggleClass() on the first list item to give it the class “done”.
+		$('li:first').toggleClass("done");
+		
+		console.log($('option').val());
+
+    });
+</script>
+
+</body>
+</html>

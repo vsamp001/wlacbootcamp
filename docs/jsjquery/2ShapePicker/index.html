@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="utf-8" />
+   <meta name="viewport" content="width=device-width,initial-scale=1.0">
+   <title>Hands-on Project 2-3</title>
+   <link rel="stylesheet" href="styles.css" />
+   <script src="modernizr.custom.05819.js"></script>
+</head>
+
+<body>
+   <header>
+      <h1>
+         Shape Picker
+      </h1>
+   </header>
+
+   <article>
+      <h2>Pick a shape</h2>
+      <div id="square">
+         &nbsp;
+      </div>
+      <div id="triangle">
+         &nbsp;
+      </div>
+      <div id="circle">
+         &nbsp;
+      </div>
+   </article>
+   <script> 
+      var square = document.getElementById("square");
+      var triangle = document.getElementById("triangle");
+      var circle = document.getElementById("circle");
+      square.addEventListener('click', function(){
+         alert("You clicked the square.");
+      });
+      triangle.addEventListener('click', function(){
+         alert("You clicked the triangle.");
+      });
+      circle.addEventListener('click', function(){
+         alert("You clicked the circle.");
+      });
+   </script>
+</body>
+</html>

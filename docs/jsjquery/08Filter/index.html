@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8" />
+    <title></title>
+    <!--<link rel="stylesheet" href="/client/css/style.css" />-->
+    <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+<style>
+    .classtd{
+        border-style:solid;
+        border-size:1px;
+    }
+</style>   
+<script>
+  // Add your javascript here
+
+$( document ).ready(function() {
+    
+    var data = [
+    {"name":"bob", "age":35, 
+    "address":{"street":"6565 sunset blvd",
+    "zip":"90028", "city":"Los Angeles"}
+    },
+    {"name":"angela", "age":25, 
+    "address":{"street":"1234 Tropicana blvd",
+    "zip":"89100", "city":"Las Vegas"}
+    },
+    {"name":"carol", "age":52, 
+    "address":{"street":"4232 melrose ave",
+    "zip":"90029", "city":"Los Angeles"}
+    },
+    {"name":"jack", "age":63, 
+    "address":{"street":"1344 first street",
+    "zip":"90105", "city":"Las Vegas"}
+    },
+    {"name":"celine", "age":21, 
+    "address":{"street":"1344 first street",
+    "zip":"10003", "city":"New York"}
+    },
+    {"name":"Luke", "age":74, 
+    "address":{"street":"1344 first street",
+    "zip":"10105", "city":"Bronx"}
+    },
+    {"name":"martin", "age":55, 
+    "address":{"street":"1344 first street",
+    "zip":"10108", "city":"Bronx"}
+	}];
+    
+    //Create a function that returns the JSON object
+    function getJSONObject(index){
+        return data[index];
+    }
+    function clearTable(){
+        $('tr').each(function(index){
+            $('td').remove();
+            $('tr').remove();
+        })
+    }
+    //id 'filter', create an event so when the dropdown list changes, show the data from the json in order.
+    //a. Call the function that gives you the json
+    //b. clear the content 
+    //c. remove the css class/style
+        $('#filter').change(function(){
+              //remove the default instruction message <div id="msg">Please select a filter</d
+            $('#msg').hide();
+             //Depending on filter, list the categories chosen in the filter in a table. 
+            //if you click name, show a list of names. if you click age, show a list of ages, ect. 
+            //a. if no filter is selected clear the results. show the instructions again
+            $choice = $(this).val();
+            if ($choice == "name"){
+                clearTable();
+                for (i = 0; i < data.length; i++) { 
+                var x = getJSONObject(i);
+                $('table').append('<tr><td>'+ x.name +'</td></tr>');
+                }
+            } else if($choice == "age"){
+                clearTable();
+                for (i = 0; i < data.length; i++) { 
+                var x = getJSONObject(i);
+                $('table').append('<tr><td>'+ x.age +'</td></tr>');
+                }
+            } else if($choice == "address"){
+                clearTable();
+                for (i = 0; i < data.length; i++) { 
+                var x = getJSONObject(i);
+                $('table').append('<tr><td>'+ x.address.street +'</td>' + '<td>'+ x.address.city +'</td>' + '<td>'+ x.address.zip +'</td></tr>');
+                }
+            }else{
+                clearTable();
+                 $('#msg').show();
+            }
+            
+  
+        });
+    
+    
+    
+    
+   
+    
+    
+    //create an onchange event on the dropdown with id 'filtercss' to change the style to the table. 
+    //add or remove border inside table cell. 
+    
+    //when style is changed, styles persist with filter. make sure to call the set class defined
+    //in previous step when filter is changed.
+      $('#filtercss').change(function(){
+          changeStyle($(this).val());
+      });
+    
+    //changing style should be wrapped in a function so it can be used reused. 
+    function changeStyle(selector){
+        if(selector =="nb")
+            $('table').css('border-style', 'none','border-size', '0px');
+        else if (selector == "wb")
+            $('table').css('border-style', 'solid','border-size', '1px');
+    }
+    });
+</script>
+  </head>
+
+  <body>
+    <div id="loader" style="display:none;">
+      <img class="ajax-loader" src="https://core.trac.wordpress.org/raw-attachment/ticket/21456/wpspin_light.gif" />
+    </div>
+    <div id="ajaxresults"></div>
+<div id="msg">Please select a filter</div>
+    <select id="filter">
+        <option value="">Choose a filter</option>
+            <option value="name">Name</option>
+            <option value="age">age</option>
+            <option value="address">Address</option>
+    </select>
+
+        <select id="filtercss">
+        <option value="">Choose a style</option>
+            <option value="wb">with cell border</option>
+            <option value="nb">no cell border</option>
+    </select>
+
+   <table id="tbl" style="border-style:solid;border-size:1px;">
+  
+    </table>
+
+  </body>
+
+</html>

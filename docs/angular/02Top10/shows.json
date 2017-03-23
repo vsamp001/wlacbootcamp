@@ -1,0 +1,62 @@
+[
+  {
+    "series": "Breaking Bad",
+    "genre": "Crime drama",
+    "run_start": 2008,
+    "description": "Walter White, a struggling high school chemistry teacher diagnosed with inoperable lung cancer, turns to a life of crime, producing and selling crystallized methamphetamine to secure his family's financial future before he dies."
+  },
+  {
+    "series": "Game of Thrones",
+    "genre": "Fantasy",
+    "run_start": 2011,
+    "description": "Set in the fictional Seven Kingdoms of Westeros, the series chronicles the violent dynastic struggles among the realm's noble families for control of the Iron Throne."
+  },
+  {
+    "series": "Planet Earth",
+    "genre": "Nature documentary",
+    "run_start": 2006,
+    "description": "The series comprises elevent episodes, each of which features a global overview of a different biome or habitat on Earth."
+  },
+  {
+    "series": "The Wire",
+    "genre": "Crime drama",
+    "run_start": 2002,
+    "description": "Each season of The Wire introduces a different facet of the city of Baltimore. In chronological order they are: the illegal drug trade, the seaport system, the city government and bureaucracy, the school system, and the print news media."
+  },
+  {
+    "series": "Sherlock",
+    "genre": "Crime drama",
+    "run_start": 2010,
+    "description": "The series depicts Sherlock Holmes and Dr. John Watson solving various mysteries in modern London."
+  },
+  {
+    "series": "True Detective",
+    "genre": "Crime drama",
+    "run_start": 2014,
+    "description": "The series traces two Louisiana State Police Criminal Investigations Division homicide detectives' hunt for a serial killer in Louisiana across seventeen years."
+  },
+  {
+    "series": "Last Week Tonight with John Oliver",
+    "genre": "Comedy",
+    "run_start": 2014,
+    "description": "John Oliver takes a satirical look at news, politics and current events on a weekly basis."
+  },
+  {
+    "series": "Arrested Development",
+    "genre": "Sitcom",
+    "run_start": 2003,
+    "description": "The show follows the Bluth family, a formerly wealthy and habitually dysfunctional family."
+  },
+  {
+    "series": "House of Cards",
+    "genre": "Political thriller",
+    "run_start": 2013,
+    "description": "House of Cards is the story of Frank Underwood who after being passed over for appointment as Secretary of State, initiates an elaborate plan to get himself into a position of power."
+  },
+  {
+    "series": "The Walking Dead",
+    "genre": "Serial drama",
+    "run_start": 2010,
+    "description": "Rick Grimes awakens from a coma to find a post-apocalyptic world dominated by flesh-eating zombies. He sets out to find his family and encounters many other survivors along the way."
+  }
+]

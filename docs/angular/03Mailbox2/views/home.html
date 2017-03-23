@@ -1,0 +1,3 @@
+<div class="email" ng-repeat="email in emails">
+   <a href="#/inbox/{{$index}}"> <span class="from">{{email.from}} </span> <span class="subject">{{email.subject}} </span><span class="date">{{email.datetime | date  }} </span></a>
+</div>

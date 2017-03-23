@@ -1,0 +1,13 @@
+<!-- Format a date so it displays in the format "Friday 1/16" -->
+<h2 class="date">{{ allevents.date |  date:'EEEE M/dd'}}  </h2>
+
+<!--
+TODO: Loop through events and display each one with this HTML
+-->
+<div class="event" ng-repeat="all in allevents.events">
+  <a href="#/{{$index}}">
+    <h3 class="name">{{all.name}}  </h3>
+    <p><span class="from"> {{all.from | date:'shortTime'}}  </span> - <span class="to"> {{all.to | date:'shortTime'}} </span></p>
+  </a>
+</div>
+
